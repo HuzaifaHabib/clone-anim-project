@@ -1,0 +1,9 @@
+.top-section{
+    background-image: url('./hero-home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    height: auto;
+    width: 100%;
+}
