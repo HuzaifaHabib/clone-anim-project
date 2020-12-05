@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap');
 
+.home-body{
+    height: auto;
+}
 .top-section{
     background-image: url('./hero-home.gif');
-    background-position: center;
+    background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 90px;
-    height: 40rem;
+    /* height: 40rem; */
     width: 100%;
 }
 
@@ -16,18 +19,24 @@
     margin-top: 10%;
 }
 
-.hero-subtitle{
+.hero-subtitle, .testimonial-p, .platforms-subtitle{
     color: #91C691;
     font: 600 1.125rem/1 Karla,helvetica,arial,sans-serif;
     letter-spacing: 0.16rem
     
 }
 
+.typed-title{
+    font-family: 'Lora', serif;
+    /* font-size: 0px 3.125rem/1.12;  */
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .hero-title{
     font-family: 'Lora', serif;
     /* font-size: 0px 3.125rem/1.12;  */
-    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));;
-
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+    height: 3rem
 }
 .hero-home-btn{
     /* padding-right: 2rem; */
@@ -46,13 +55,30 @@
     /* justify-content: space-between; */
 }
 
+@media(max-width: 865px) {
+    .service-div-container{
+        display: none !important;
+    }
+    .top-section{
+        background-size: cover;
+    }
+    .service-div-1a{
+        display: inherit;
+    }
+}
+
 @media(max-width: 600px) {
     .btn-container{
         flex-direction: column;
     }
     .home-btn-2{
-        margin-left: 45px !important;
+        margin-left: 15px !important;
     }
+    .top-section{
+        background-size: contain;
+        background-position-y: bottom;
+    }
+
 }
 
 .home-btn-1{
@@ -91,10 +117,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top:22rem;
 }
 
-.service-div-container h3 {
+.service-div-container h3 , .service-div-active h3{
     font-family: 'Lora', 'Serif';
     font-size: 1.5rem;
 }
@@ -105,14 +131,13 @@
     border-radius: 4px;
     padding: 2rem;
     height: 15rem;
-
 }
 
-.service-div-container p{
+.service-div-container p, .service-div-active p{
     color: rgb(145,198,145);
 }
 
-.service-div-container h5 {
+.service-div-container h5 , .service-div-active h5{
     font-family: 'Lora', 'Serif';
     color:rgb(145,198,145);
     margin-top: 1.5rem;
@@ -122,4 +147,132 @@
 
 .testimonial-clients{
     text-align: center;
+}
+
+.service-div-active{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #F6F7F9;
+    height:auto;
+    background-position: 50% 105%;
+    position: absolute;
+    max-width: 45rem;
+    /* margin-left:auto; */
+    /* margin-right: auto; */
+    margin-top: -20rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    box-shadow: 0 10px 40px rgba(0,0,0,.125);    
+    padding-bottom: 15rem;
+    /* visibility: hidden; */
+    z-index: -1;
+}
+
+.service-div-active-pd{
+    font: 400 1.25rem/1.33 ;
+}
+
+.service-box__content-list{
+    list-style: none;
+    list-style-image: url(https://junto.digital/wp-content/themes/junto/assets/img/icon-feature-checkmark.svg);
+    margin-top: 2rem;
+}
+
+.service-div-active-p{
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 2.4rem 2.6rem 0;
+}
+
+.service-box-top{
+    flex: 0 0 62.5%;
+    width: 62.5%;
+    word-wrap: break-word;
+}
+
+.service-box-title{
+    padding-left: 2.5rem;
+}
+
+.service-box-button{
+    /* position: relative; */
+    display: inline-block;
+    padding: 3rem 4.25rem 3rem 3.25rem;
+    background: #191C3C;
+    margin-left: auto;
+}
+.service-box-button a , .service-box-button a:hover{
+    color: white;
+}
+
+.service-box-content{
+    max-width: 45rem;
+    display: flex;
+    flex: 0 0 100%;
+    flex-flow: row wrap;
+}
+.service-box-content-title{
+    padding: 0 2.5rem;
+    margin-top: 3rem;
+}
+
+.service-box-content-description{
+    padding-left: 2.5rem;
+    padding-right: 3.5rem;
+}
+
+.s-d-a1{
+    background-image: url('https://junto.digital/wp-content/uploads/2018/12/service-seo.png');
+    left: 2%;
+    top: 100%;
+    z-index: 2 ;
+}
+.s-d-a2{
+    background-image: url('https://junto.digital/wp-content/uploads/2018/12/service-web-development.png');
+    right: 2%;
+    top: 100%;
+    z-index: 2 ;
+}
+
+.s-d-a2 .service-box-title{
+    width: 80%;
+}
+
+.s-d-a2 .service-box-button{
+    margin-top: -19.8%;
+}
+
+.testimonial-clients{
+    margin-top: 5rem;
+}
+
+.testimonail-h2, .platforms-title{
+    font-family: 'Lora', serif;
+    letter-spacing: 0.2rem;
+}
+
+.client-img>.row{
+    justify-content: center !important;
+
+}
+.client-img{
+    padding: 2rem;
+    margin-left: 9rem;
+    margin-right:4rem;
+    max-width: 100%;
+}
+
+.client-logo{
+    height: 4rem;
+    width: 8rem;
+}
+
+.bottom-section-up{
+    background-image: url('https://junto.digital/wp-content/themes/junto/assets/img/background-platforms.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
 }

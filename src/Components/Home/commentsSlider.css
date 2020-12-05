@@ -1,0 +1,39 @@
+.comment-slider{
+    text-align: center;
+    background-color: rgb(246,247,249);
+    width : 40rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.client-slider{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2% ;
+    width: 80%;
+} 
+
+@media(max-width: 600px) {
+    .comment-slider{
+        width: 20rem;
+    }
+}
+
+.testimonials-rating{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slick-slide{
+    transform: translateY(2rem);
+    transition: all 0.33s ease !important;
+}
+.slick-active{
+    transform: translateY(0);
+    transition: all 1s ease !important;
+    transition-delay: 0.12s;
+}

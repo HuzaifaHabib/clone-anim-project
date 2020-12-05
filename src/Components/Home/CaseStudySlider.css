@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap');
+
+
+.cs-img-1{
+    background-image: url('https://junto.digital/wp-content/uploads/2018/11/affiliate-marketing-case-study.jpg') !important;
+}
+
+.cs-img-2{
+    background-image: url('https://junto.digital/wp-content/uploads/2018/06/content-marketing-case-study-1.jpg') !important;
+}
+
+.cs-img-3{
+    background-image: url('https://junto.digital/wp-content/uploads/2018/08/Website-Redesign-Case-Study.jpg') !important;
+}
+
+.case-studyimage{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    /* width : 60rem !important; */
+    height: 30rem;
+    overflow: visible;
+
+}
+
+.case-study-slider{
+    margin-left: auto;
+    margin-right:auto;
+    width: 80%;
+    padding: 2rem;
+    
+
+}
+.case-study-slider> .slick-slider> .slick-arrow{
+    background-color: lawngreen;
+}
+
+.slick-next {
+    padding-top: 1.5rem;
+    border-radius: 4px;
+}
+.slick-arrow.slick-prev {
+    z-index: 10;
+    padding-top: 1.5rem;
+    border-radius: 4px;
+}
+
+
+.case-study-content{
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    flex: 0 0 73.33333%;
+    max-width: 70.33333%;
+    height: 21rem;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    min-width: 700px;
+    position: relative;
+    z-index: 1;
+    /* margin-top:5rem; */
+    overflow:visible;
+    background: #FFF;
+    /* opacity: 92%; */
+    padding: 2.33rem 5rem 2.33rem 2.25rem;
+    text-align: left;
+    transform: translate(-8rem,8.5rem);
+    box-shadow: 0 4px 40px rgba(0,0,0,.1);
+    border-radius: 4px;
+    border: 2px solid;
+    z-index: 200;
+}
+
+.case-study-author {
+    margin-right: 0;
+    margin-top: 2rem;
+    display: flex;
+    max-width: 50%;
+    text-align: left;
+}
+
+.author__image > img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50% !important;
+}
+
+.author-name-sd2{
+    font-family: 'Lora', 'Serif';
+    font-size: 1.3rem;;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
+
+.case-study-link{
+    margin-left:auto;
+    margin-top: 3.2rem;
+
+}
+
+.case-study-link > a{
+    color: black;
+    font-family: 'Lora','Serif';
+}
+
+.case-study-link > a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.case-study__subtitle{
+    color: #508B8B;
+    font: 600 .875rem/1 Karla,helvetica,arial,sans-serif
+}
+.case-study__title{
+    font-family: 'Lora', 'Serif';
+}

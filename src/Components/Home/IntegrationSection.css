@@ -1,0 +1,59 @@
+.platform-logo{
+    width : 10rem;
+    height: 10rem;
+    
+}
+
+.platform-img{
+    height: 160px;
+}
+
+.col-6.col-sm-4 {
+    display: inline-block;
+    width: 12rem;
+
+}
+
+.col-a{
+    margin-top: 2rem;
+}
+
+
+.col-b.col-6.col-sm-4 {
+    transform: translateY(-40px);
+}
+
+.col-a.col-6.col-sm-4 {
+    transform: translateY(3rem);
+}
+
+.int-container{
+    display: flex;
+    flex-direction: row;
+        
+}
+
+.int-right-sec{
+    width: 60%;
+    margin-top: 15%;
+}
+
+.platform-button-1{
+    border: 1px solid rgb(25,28,60);
+    border-radius: 50px;
+    background-color: rgb(25,28,60);
+    color: white;
+    height: 50px !important;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.platform-button-1:hover{
+    transition: background-color 0.5s ease;
+    color : white;
+    background-color: rgb(145,198,145);
+    border-color: rgb(145,198,145);
+    
+}
+
