@@ -74,7 +74,7 @@ function FooterComponent() {
                     </div>
                 </div>
                 <div className="copy-right">
-                    <p className='copy-right-p'>Made with <span role='img'  aria-label='Love'>❤️</span> by Hero</p>
+                    <p className='copy-right-p'>Made with <span role='img' aria-label='Love'>❤️</span> by Hero</p>
                 </div>
             </div>
         </div>

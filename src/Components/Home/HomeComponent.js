@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './hero-home.gif'
 import Typed from 'react-typed';
-import { Container, Row, Col, Form } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import IntegrationSection from './IntegrationSection';
 
 import FooterComponent from './footerComponent'
@@ -13,6 +13,8 @@ import CaseStudySlider from './CaseStudySlider'
 
 //styles
 import './HomeComponent.css'
+import Fade from 'react-reveal/Fade';
+
 
 
 // Service div 1 to show on Hover
@@ -20,6 +22,7 @@ import './HomeComponent.css'
 const Sd1 = (props) => {
     return (
         <div className="s-d-a1 service-div-active" onMouseEnter={props.hoverTrue} onMouseLeave={props.hoverFalse}>
+            <Fade bottom>
             <div clas="service-box-top">
                 <p className='service-div-active-p'>ATTRACT MORE VISITORS</p>
                 <h3 className="service-box-title">SEO & Content Marketing</h3>
@@ -38,6 +41,7 @@ const Sd1 = (props) => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }
@@ -47,6 +51,7 @@ const Sd1 = (props) => {
 const Sd2 = (props) => {
     return (
         <div className="s-d-a2 service-div-active" onMouseEnter={props.hoverTrue} onMouseLeave={props.hoverFalse}>
+        <Fade bottom>
             <p className='service-div-active-p'>IMPRESS YOUR AUDIENCE</p>
             <div clas="service-box-top">
                 <h3 className="service-box-title">Mobile friendly, easily editable and search optimized.</h3>
@@ -65,7 +70,7 @@ const Sd2 = (props) => {
                     </div>
                 </div>
             </div>
-
+            </Fade>
         </div>
     )
 }

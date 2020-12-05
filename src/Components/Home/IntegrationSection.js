@@ -1,12 +1,15 @@
 import React from 'react';
 import './IntegrationSection.css';
-import { Container, Row, Col, Form } from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
+
+import Fade from 'react-reveal/Fade';
 
 
 
 function IntegrationSection() {
     return (
         <div className='integration-section'>
+            <Fade bottom>
             <div className='container int-container'>
                 <Container>
                     <Col xs="6" sm="4" className="col-a">
@@ -27,7 +30,7 @@ function IntegrationSection() {
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#fff1bf" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-analytics.png" title="logo analytics" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-analytics.png" alt='logo-analytics' title="logo analytics" />
                                 </div>
                             </div>
                         </Row>
@@ -36,14 +39,14 @@ function IntegrationSection() {
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#dff7fe" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-databox.png" title="logo facebook" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-databox.png" alt='logo-databox' title="logo facebook" />
                                 </div>
                             </div>
                         </Row>
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#fcdacc" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-sem-rush.png" title="logo wordpress" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-sem-rush.png" alt='logo-sem-rush' title="logo wordpress" />
                                 </div>
                             </div>
                         </Row>
@@ -52,21 +55,21 @@ function IntegrationSection() {
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#d7e3f5" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-adwords-1.png" title="logo facebook" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-adwords-1.png" alt='logo-adword' title="logo facebook" />
                                 </div>
                             </div>
                         </Row>
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#efefef" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-hubspot.png" title="logo wordpress" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-hubspot.png" alt='logo-hubspot' title="logo wordpress" />
                                 </div>
                             </div>
                         </Row>
                         <Row>
                             <div className='platform'>
                                 <div class='platform-logo' style={{ backgroundColor: "#ffffff" }}>
-                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-ahrefs.png" title="logo wordpress" />
+                                    <img className="platform-img" src="https://junto.digital/wp-content/uploads/2018/09/logo-ahrefs.png" alt='logo-href' title="logo wordpress" />
                                 </div>
                             </div>
                         </Row>
@@ -90,6 +93,7 @@ function IntegrationSection() {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

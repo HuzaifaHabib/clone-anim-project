@@ -42,9 +42,9 @@ const CaseStudySlider = () => {
         prevArrow: <PrevArrow />
     };
 
-    const slider1Style = {
+    // const slider1Style = {
 
-    }
+    // }
 
     return (
         <div>
